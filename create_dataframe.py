@@ -8,7 +8,7 @@ from sklearn import preprocessing
 
 def createdataframe():
 #this method creates the initial dataframe making baby's the columns and attributes the rows
-    with open("../assets/soc-redditHyperlinks-body.csv") as file_obj:
+    with open("soc-redditHyperlinks-body.csv") as file_obj:
         reader = csv.DictReader(file_obj)
         datadict,index = {},0
         for row in reader:
