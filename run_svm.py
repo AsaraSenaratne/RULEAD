@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.svm import OneClassSVM
 
 def svm():
-    dataframe = pd.read_pickle('subreddit_node_features.pkl')
+    dataframe = pd.read_pickle('add a pickle or csv file)
     print("Read Dataframe from Pickle")
     last_index = (len(dataframe.columns))
     print("Got the length of the dataframe columns")
@@ -28,7 +28,7 @@ def svm():
     print(positives_only)
 
 def svm_dif_nu():
-    dataframe = pd.read_pickle('subreddit_node_features.pkl')
+    dataframe = pd.read_pickle('add a pickle or csv file')
     print("Read Dataframe from Pickle")
     print("Got the length of the dataframe columns")
     binary_index = dataframe.columns.get_loc("Positive sentiment calculated by VADER")
